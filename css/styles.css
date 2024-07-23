@@ -816,7 +816,7 @@ h2 {
   }
 
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 16px;
   }
 
@@ -966,7 +966,7 @@ h2 {
 
 @media screen and (max-width: 320px) {
   .container {
-    width: 320px;
+    max-width: 320px;
     padding: 0 16px;
   }
 
