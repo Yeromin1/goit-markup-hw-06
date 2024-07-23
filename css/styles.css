@@ -1062,9 +1062,9 @@ h2 {
     padding: 96px 0px;
   }
 
-  .container-footer .container,
-  .footer-form {
+  .container-footer .container {
     display: block;
+    padding: 0px 16px;
   }
 
   .container-logo-link {
@@ -1085,6 +1085,10 @@ h2 {
   justify-content: center;
   gap: 16px;
   margin-bottom: 72px;
+}
+
+.footer-form {
+  display: block;
 }
 
 .footer-form-input {
