@@ -122,76 +122,74 @@ h2 {
 }
   
 
+/*-------menu-mobal---------*/
+.modal-menu-overlay {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding: 72px 24px 40px 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
 
-
-
-
-
-.header {
+.modal-menu-overlay.is-open {
+opacity: 1;
+pointer-events: auto;
 }
 
 .container-modal {
-    width: 320px;
-    position: relative;
-    padding: 72px 24px 40px 16px;
-    margin: 0 auto;
-}
-
-.modal-button-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4F4FD;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-icon-close {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover .modal-icon-close,
 .modal-button-close:focus .modal-icon-close,
 .modal-button-close:active .modal-icon-close {
-    fill: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .modal-button-close:hover,
 .modal-button-close:focus,
 .modal-button-close:active {
-    background-color: #404bbf;
-    border: none;
+  background-color: #404bbf;
+  border: none;
 }
 
 .mobal-logo-page {
 }
 
 .mobal-page-nav {
-    margin-bottom: 168px;
+
 }
 
 .mobal-nav-link {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .mobal-nav-link .link-menu {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-menu.active {
-    color: #404bbf;
+  color: #404bbf;
 }
 
 .active {
@@ -204,74 +202,56 @@ h2 {
 }
 
 .mobal-page-address .address-link {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .menu-address-link {
-        margin-bottom: 24px;
-    }
+.menu-address-link {
+  margin-bottom: 24px;
+}
 
-    .link.active-tel {
-        color: #4D5AE5;
-    }
+.link.active-tel {
+  color: #4D5AE5;
+}
 
-    .address-link {
-        margin-bottom: 48px;
-    }
-
-.link:hover,
-.link:focus,
-.link:active {
-    color: #404bbf;
+.address-link {
+  margin-bottom: 48px;
 }
 
 .contacts .media {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .media-icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .media .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-    transition-property: color, background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition-property: color, background-color;
 }
 
 .media-icon .link {
-    fill: #f4f4fd;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.media .link:hover,
-.media .link:focus {
-    background-color: #404BBF;
+.media-icon .link:hover,
+.media-icon .link:focus {
+  background-color: #404BBF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------------section-1--------------*/
@@ -298,7 +278,7 @@ h2 {
       to bottom, 
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-      url(../images/officeXX.jpg);
+      url(../images/officeXX-2.jpg);
   }
 }
 
@@ -921,7 +901,7 @@ h2 {
         to bottom, 
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(../images/office768.jpg);
+        url(../images/office768-2.jpg);
     }
   }
 
@@ -1118,7 +1098,7 @@ h2 {
         to bottom, 
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(../images/office.jpg);
+        url(../images/office-2.jpg);
     }
   }
 
