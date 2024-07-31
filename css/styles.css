@@ -121,34 +121,44 @@ h2 {
   padding: 18px 0px;
 }
   
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-icon {
+  display: block;
+  fill: #2f2f37;
+}
 
 /*-------menu-mobal---------*/
 .modal-menu-overlay {
   position: fixed;
-  z-index: 25;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #FFFFFF;
-  padding: 72px 24px 40px 16px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   overflow: auto;
-  opacity: 0;
-  pointer-events: none;
+
 }
 
 .modal-menu-overlay.is-open {
 opacity: 1;
+visibility: inherit;
 pointer-events: auto;
 }
 
 .container-modal {
-  
+  position: relative;
+  padding: 72px 16px 40px;
+  flex-direction: column;
+  height: 100%;
 }
 
 .modal-icon-close {
@@ -214,7 +224,7 @@ pointer-events: auto;
   margin-bottom: 24px;
 }
 
-.link.active-tel {
+.address-link.active {
   color: #4D5AE5;
 }
 
@@ -402,14 +412,7 @@ pointer-events: auto;
 }
 
 .media .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition-property: color, background-color;
+
 }
 
 .media-icon .link {
@@ -441,7 +444,6 @@ pointer-events: auto;
 .portfolio-item {
   min-width: 288px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-foto {
@@ -615,7 +617,7 @@ pointer-events: auto;
 }
 
 .modal {
-  min-width: 288px;
+  width: 288px;
   padding: 72px 16px 24px;
   overflow-y: auto;
   position: absolute;
@@ -759,6 +761,7 @@ pointer-events: auto;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
 }
 
 .checkbox-span {
@@ -804,7 +807,7 @@ pointer-events: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.checkbox-link,
+
 .checkbox-text {
   padding-left: 24px;
 }
@@ -878,7 +881,8 @@ pointer-events: auto;
     background-color: #404bbf;
   }
 
-  .mobile-menu-icon {
+  .mobile-menu-icon,
+  .modal-menu-overlay {
     display: none;
 }
 
@@ -932,10 +936,7 @@ pointer-events: auto;
   }
 
   .benefits-item .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+
   }
 
   .benefits-item .text {
@@ -945,12 +946,11 @@ pointer-events: auto;
 
   /*---section-3---*/
   .section-team {
-    padding: 96px 0px;
+  
   }
 
   .team-list {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 64px 24px;
     justify-content: center;
     }
@@ -963,12 +963,11 @@ pointer-events: auto;
 
   /*---section-4---*/
   .section-portfolio {
-    padding: 96px 0px;
+  
   }
   
   .portfolio-list {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 72px 24px;
     justify-content: center;
     }
@@ -981,15 +980,14 @@ pointer-events: auto;
 
     /*---------footer---------*/
   .container-footer {
-    padding: 96px 0px 96px 108px;
+  
   }
 
   .container-footer .container {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 72px 24px;
-    align-items: baseline;
-    padding: 0px;
+    margin: 0 auto;
+    max-width: 582px;
     }
   
   .container .logo-text {
@@ -1012,6 +1010,7 @@ pointer-events: auto;
 
   .footer-form-input {
     margin-bottom: 0px;
+    min-width: 264px;
   }
 
   .media-icon-footer {
@@ -1050,7 +1049,6 @@ pointer-events: auto;
 
 
   .page-address {
-    display: flex;
     gap: 40px;
     padding: 24px 0;
     flex-direction: row;
@@ -1137,7 +1135,6 @@ margin-bottom: 48px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
   }
 
   .benefits-item .text {
@@ -1174,6 +1171,12 @@ margin-bottom: 48px;
 
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
+  }
+
+  .portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .box-overlay {
