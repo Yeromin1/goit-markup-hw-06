@@ -145,7 +145,6 @@ h2 {
   visibility: hidden;
   pointer-events: none;
   overflow: auto;
-
 }
 
 .modal-menu-overlay.is-open {
