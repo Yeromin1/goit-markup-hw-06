@@ -77,7 +77,7 @@ h2 {
   overflow: hidden;
 }
 
-.inpyt {
+.input {
   font-family: inherit;
 }
 
@@ -184,12 +184,6 @@ h2 {
   border: none;
 }
 
-.mobal-logo-page {
-}
-
-.mobal-page-nav {
-}
-
 .mobal-nav-link {
   margin-bottom: 40px;
 }
@@ -205,15 +199,6 @@ h2 {
 
 .link-menu.active {
   color: #404bbf;
-}
-
-.active {
-}
-
-.contacts {
-}
-
-.mobal-page-address {
 }
 
 .mobal-page-address .address-link {
@@ -371,9 +356,6 @@ h2 {
   margin-bottom: 72px;
 }
 
-.team-list {
-}
-
 .team-list .team-item {
   min-width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -416,9 +398,6 @@ h2 {
   height: 40px;
 }
 
-.media .link {
-}
-
 .media-icon .link {
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -454,9 +433,6 @@ h2 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
-}
-
-.portfolio-foto {
 }
 
 .overlay-text {
@@ -549,12 +525,6 @@ h2 {
 
 .icon-footer .icon {
   fill: #f4f4fd;
-}
-
-.footer-form-title {
-}
-
-.footer-form {
 }
 
 .footer-form-input {
